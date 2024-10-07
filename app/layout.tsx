@@ -4,7 +4,7 @@ import './globals.css'
 
 import { Poppins as FontSans } from 'next/font/google'
 import { cn } from '../lib/utils'
-
+import { Toaster } from '@/components/ui/toaster'
 const fontSans = FontSans({
   subsets: ['latin'],
   weight: ['400', '600'],
@@ -30,6 +30,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   )
